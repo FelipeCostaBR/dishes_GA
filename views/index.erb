@@ -1,0 +1,10 @@
+<h1>Good food hunting</h1>
+<a href="/form">post new dish</a>
+<% dishes.each do |dish| %>
+  <p>
+    <a href="/details?id=<%= dish["id"] %>">
+      <%= dish["name"] %>
+    </a>
+  </p>
+  <img src="<%= dish["image_url"] %>">
+<% end %>
