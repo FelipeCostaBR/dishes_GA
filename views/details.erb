@@ -1,1 +1,6 @@
 <h1>details for <%= dish['name'] %> </h1>
+<form action='/dishes/<%=dish['id']%>' method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>delete</button>
+</form>
+<a href="/dishes/<%=dish['id']%>/edit">Edit</a>

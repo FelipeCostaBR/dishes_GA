@@ -4,5 +4,12 @@ body {
 
 img {
   width: 20%;
-  height: 20%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
 }
